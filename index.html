@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>Học không biết chán, dạy người không biết mỏi</header>
+    <div id="menu_icon" >
+        <div id="icon">
+            <div id="image">
+                <img  src="assets\ninja-slash-the-moon-logo-mascot-e-sport-png_113430.jpg" alt="my photo"> 
+            </div>
+        </div>
+            <nav class="topnav" id="myTopnav"> 
+                <a  class="icon" onclick="myFunction()">
+                    <img  width="25px" height="25px" src="assets\icons8-menu-50.png" alt="">
+                  </a>
+                <a href="">Tai khoang</a>
+                <a href="">Khoa hoc</a>
+                <a href="index.html">Trang chu</a>
+                
+            </nav>
+
+    </div>
+    <div id="container">
+        <div id="content">
+            <p>Nơi chia sẽ khóa học cho bạn</p>
+        </div>
+        <div id="course_ads">
+            <div class="item">
+                <img src="assets\pexels-photo-4144222.webp" alt="">
+                <div class="describe">Lớp 10</div>
+            </div>
+            <div class="item">
+                <img src="assets\pexels-photo-4261793.webp" alt="">
+                <div class="describe">Lớp 11</div>
+            </div>
+            <div class="item">
+                <img src="assets\pexels-photo-4144153.jpeg" alt="">
+                <div class="describe">Lớp 12</div>
+            </div>
+            
+        </div>
+
+        <div id="footers">
+            <p> Created By Ninja School</p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>
+</html>

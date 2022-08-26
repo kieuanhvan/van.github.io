@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 30px;
+    background: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 120%;
+}
+#menu_icon{
+    display: flex;
+    flex-wrap: nowrap;
+    background: whitesmoke;
+}
+#icon{
+    position: relative;
+    flex: 30%;
+    /* background: red; */
+    text-align: center;
+    
+}
+#icon #image{
+    position: absolute  ;
+    right: 40%;
+    width: 90px;
+    height: 90px;
+    background: yellow;
+    margin-top: 7px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+#icon #image img{
+    width:100% ;
+    
+}
+.topnav .icon {
+    display: none;
+  }
+nav{
+    flex: 70%;
+    /* background: rgb(149, 255, 141); */
+    overflow: hidden;
+}
+nav > a{
+    padding: 45px 20px;
+    display: block;
+    float: right;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+    color: black;
+    margin-right: 40px;
+}
+nav > a:hover{
+ 
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 184, 91);
+    text-decoration-thickness: 13px;
+}
+#container{
+    position: relative;
+    min-height: 75vh;
+    background: rgb(251, 187, 76);
+}
+#container > #content{
+    width: 100%;
+    top: 40px;
+    position: absolute ;
+    text-align: center;
+}
+#container > #content >p{
+   
+    font-size: 40px;
+    font-weight: 800;
+}
+#course_ads{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#course_ads .item{
+    flex: 33%;
+    text-align: center;
+    
+}
+#course_ads .item .describe{
+    font-size: 22px;
+    
+}
+#course_ads .item > img{
+    width: 80%;
+    border-radius: 20%;
+
+}
+#footers{
+    position: absolute;
+    width: 100%;
+    bottom: 4%;
+    text-align: center;
+}
+#footers > p{
+    font-size: 20px;
+}
+/* @media screen and (max-width:400px){
+    #course_ads{
+        position: absolute;
+        top: 30%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #course_ads .item{
+        flex: 100%;
+        text-align: center;
+    }
+    #course_ads .item > img{
+        width: 50%;
+        border-radius: 20%;
+    }
+    #container{
+        position: relative;
+        min-height: 90vh;
+    }
+} */
+@media screen and (max-width: 400px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    #icon #image{
+        position: absolute ;
+        right: 35%;
+        width: 50px;
+        height: 50px;
+        margin-top: 17px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #course_ads{
+        position: absolute;
+        top: 30%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #course_ads .item{
+        flex: 100%;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    #course_ads .item > img{
+        width: 50%;
+        border-radius: 20%;
+    }
+    #container{
+        position: relative;
+        height: 130vh;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    #icon #image{
+        position: absolute ;
+        right: 35%;
+        width: 50px;
+        height: 50px;
+        margin-top: 17px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+   
+  }
